@@ -92,7 +92,7 @@ if [ ! -f "$KAFKA_FOLDER/bin/kafka-server-start.sh" ]; then
 fi
 
 # Step 9: Set temporary JAVA_HOME and PATH for Kafka
-JAVA_HOME="$(pwd)/$JDK_FOLDER"
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
 PATH="$JAVA_HOME/bin:$(pwd)/$KAFKA_FOLDER/bin:$PATH"
 echo "✅ JAVA_HOME set to: $JAVA_HOME"
 

@@ -23,7 +23,7 @@ else
 fi
 
 # Set JAVA_HOME only for this session (NOT exported)
-JAVA_HOME="$(pwd)/$JDK_FOLDER"
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
 PATH="$JAVA_HOME/bin:$(pwd)/$KAFKA_FOLDER/bin:$PATH"
 
 echo "Using temporary JAVA_HOME=$JAVA_HOME"
